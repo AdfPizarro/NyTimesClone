@@ -9,7 +9,7 @@ button {
   text-transform: uppercase;
   font-size: 11px;
   border-radius: 3px;
-  font-weight: 500;
+  font-weight: 700;
   transition: all 0.6s ease 0s;
   cursor: pointer;
 }
@@ -32,6 +32,42 @@ li {
   display: inline-block;
 }
 
+figure {
+  margin: 0;
+}
+
+h2,
+b {
+  font-weight: bold;
+  color: #333;
+}
+
+h4 {
+  margin: 0;
+}
+
+h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+hr {
+  width: 72px;
+  border: none;
+  background: rgb(204, 204, 204);
+  height: 1px;
+}
+
+ul {
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
 .article-icon img {
   display: block;
 }
@@ -40,12 +76,27 @@ article a {
   color: #326891;
 }
 
+.article-source,
+.article-source > a {
+  color: rgb(102, 102, 102);
+  font-size: 10px;
+}
+
 article a:hover {
   text-decoration: none;
 }
 
 .not-an-ad-section > div a {
   margin-top: 4px;
+}
+
+iframe {
+  width: 100%;
+  height: 358px;
+}
+
+.article-footer > button {
+  width: 330px;
 }
 
 /* nav */
@@ -97,11 +148,6 @@ header > h1 {
   font-style: italic;
   font-size: 40px;
   font-weight: 700;
-  max-width: 600px;
-}
-
-header figure {
-  margin: 0;
 }
 
 .image-description {
@@ -113,7 +159,6 @@ header figure {
   color: #888;
   font-size: 12px;
 }
-
 
 /* Article */
 
@@ -153,7 +198,7 @@ time {
   position: relative;
 }
 
-.arro2-2 {
+.arrow-2 {
   border-color: rgb(255, 255, 255) transparent;
   border-style: solid;
   border-width: 6px 0 0 6px;
@@ -179,6 +224,7 @@ time {
 
 article p {
   font-size: 20px;
+  color: #333;
 }
 
 .not-an-ad-section {
@@ -187,34 +233,99 @@ article p {
   color: #333;
 }
 
-.not-an-ad-section hr {
-  width: 72px;
-  border: none;
-  background: rgb(204, 204, 204);
-  height: 1px;
+.article-content {
+  max-width: 600px;
 }
 
 .not-an-ad-section > div {
   margin: 22px 0;
 }
 
-article .weird-image img {
-  width: 100%;
-}
-
-article .weird-image {
+.weird-image {
   max-width: 940px;
 }
 
-article .weird-image > div {
+.weird-image > div {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 18px;
 }
 
-article .weird-image p {
+.weird-image p {
   font-size: 13px;
   font-weight: 300;
+}
+
+.article-image {
+  max-width: 720px;
+}
+
+.credits {
+  grid-column: 1/3;
+  align-self: start;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.credits-line {
+  background: black;
+  display: inline-block;
+}
+
+.article-footer {
+  margin-top: 22px;
+  margin-bottom: 32px;
+}
+
+/* Aside */
+
+aside {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 20px;
+  font-family: 'times new roman', times, serif;
+}
+
+aside > hr {
+  width: 100%;
+  background: black;
+}
+
+.first-div {
+  grid-column: 1/2;
+}
+
+.second-div {
+  grid-column: 2/3;
+}
+
+.more-section {
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.sm-image-credits {
+  display: inline-block;
+  width: 100%;
+}
+
+.most-popular-section {
+  grid-row: auto/span 6;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.popular-title {
+  padding: 20px 0;
+  border-top: 1px solid rgb(204, 204, 204);
+}
+
+.popular-link:hover {
+  color: rgb(102, 102, 102);
 }
 
 /* Helper Classes */
@@ -231,5 +342,7 @@ article .weird-image p {
 .h-100 { height: 100%; }
 .w-100 { width: 100%; }
 .text-align-center { text-align: center; }
+.text-align-left { text-align: left; }
+.text-align-right { text-align: right; }
 .font-cheltenham { font-family: nyt-cheltenham, georgia, 'times new roman', times, serif; }
 .font-franklin { font-family: nyt-franklin, helvetica, arial, sans-serif; }
