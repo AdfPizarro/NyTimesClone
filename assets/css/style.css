@@ -14,8 +14,6 @@ button {
   cursor: pointer;
 }
 
-
-
 button:hover {
   background: rgb(50, 104, 145);
 }
@@ -95,29 +93,27 @@ nav .logo {
   height: 26px;
 }
 
-/* Header */
-
-header > h1 {
-  margin-top: 50px;
-  margin-bottom: 7px;
-  font-style: italic;
-  font-size: 40px;
-  font-weight: 700;
-  max-width: 600px;
-}
 
 figure {
   margin: 0;
 }
 
-.image-description {
-  color: #666;
-  font-size: 15px;
+
+h2 {
+    font-weight: bold;
+    color: #333;
 }
 
-.image-source {
-  color: #888;
-  font-size: 12px;
+h4  {
+  margin: 0px;
+
+}
+
+h3 {
+
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 hr {
@@ -130,6 +126,34 @@ hr {
 ul {
   padding:0;
 }
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* Header */
+
+header > h1 {
+  margin-top: 50px;
+  margin-bottom: 7px;
+  font-style: italic;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+
+.image-description {
+  color: #666;
+  font-size: 15px;
+}
+
+.image-source {
+  color: #888;
+  font-size: 12px;
+}
+
+
 
 /* Article */
 
@@ -169,7 +193,7 @@ time {
   position: relative;
 }
 
-.arro2-2 {
+.arrow-2 {
   border-color: rgb(255, 255, 255) transparent;
   border-style: solid;
   border-width: 6px 0 0 6px;
@@ -208,44 +232,31 @@ article p {
   max-width: 600px;
 }
 
-hr {
-  width: 72px;
-  border: none;
-  background: rgb(204, 204, 204);
-  height: 1px;
-}
 
 .not-an-ad-section > div {
   margin: 22px 0;
 }
 
-article .weird-image img {
-  width: 100%;
-}
 
-article .weird-image {
+.weird-image {
   max-width: 940px;
 }
 
-article .weird-image > div {
+.weird-image > div {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 18px;
 }
 
-article .weird-image p {
+.weird-image p {
   font-size: 13px;
   font-weight: 300;
 }
 
-h2 {
-    font-weight: bold;
-    color: #333;
-}
+
 
 .article-image{
   max-width: 720px;
-
 }
 
 .credits {
@@ -260,12 +271,7 @@ h2 {
   display: inline-block;
 }
 
-.article-source{
-  color: rgb(102, 102, 102);
-  font-size: 10px;
-}
-
-.article-source > a {
+.article-source, .article-source > a {
   color: rgb(102, 102, 102);
   font-size: 10px;
 }
@@ -280,6 +286,7 @@ h2 {
 }
 
 /* Aside */
+
 aside {
   max-width: 1200px;
   margin: auto;
@@ -296,14 +303,11 @@ aside > hr {
 
 .first-div{
   grid-column: 1/2;
-
 }
 
 .second-div{
   grid-column: 2/3;
-
 }
-
 
 .more-section{
   grid-column: 1/2;
@@ -313,27 +317,10 @@ aside > hr {
 }
 
 
-.more-article > img{
-  width: 100%;
-  display:block;
-}
-
-
-h3 {
-
-  font-size: 16px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
 
 .sm-image-credits{
   display: inline-block;
   width: 100%;
-}
-
-h4  {
-  margin: 0px;
-
 }
 
 .most-popular-section {
@@ -348,13 +335,11 @@ h4  {
 
 .popular-title{
   padding: 18px 0 ;
-
 }
 
 .popular-link : hover {
   color: rgb(102, 102, 102);
 }
-
 
 /* Helper Classes */
 
@@ -374,4 +359,3 @@ h4  {
 .text-align-right { text-align: right; }
 .font-cheltenham { font-family: nyt-cheltenham, georgia, 'times new roman', times, serif; }
 .font-franklin { font-family: nyt-franklin, helvetica, arial, sans-serif; }
-.font-timesNewRoman {font-family: 'times new roman', times, serif;}
