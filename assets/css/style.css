@@ -20,16 +20,32 @@ button:hover {
 
 body {
   margin: 0;
-  font-family: nyt-cheltenham,georgia,'times new roman',times,serif;
+  font-family: nyt-cheltenham, georgia, 'times new roman', times, serif;
 }
 
-header{
+header {
   max-width: 1200px;
 }
 
-li{
+li {
   list-style: none;
   display: inline-block;
+}
+
+.article-icon img {
+  display: block;
+}
+
+article a {
+  color: #326891;
+}
+
+article a:hover {
+  text-decoration: none;
+}
+
+.not-an-ad-section > div a {
+  margin-top: 4px;
 }
 
 /* nav */
@@ -73,9 +89,9 @@ nav .logo {
   height: 26px;
 }
 
-/* Header*/
+/* Header */
 
-header > h1{
+header > h1 {
   margin-top: 50px;
   margin-bottom: 7px;
   font-style: italic;
@@ -84,28 +100,27 @@ header > h1{
   max-width: 600px;
 }
 
-.image-description {
- color: #666;
- font-size: 15px;
+header figure {
+  margin: 0;
 }
 
-.image-source{
+.image-description {
+  color: #666;
+  font-size: 15px;
+}
+
+.image-source {
   color: #888;
-  font-size:12px
+  font-size: 12px;
 }
 
 
 /* Article */
-article {
-  max-width: 600px;
-
-}
 
 .author {
   color: #333;
   font-size: 15px;
   font-weight: 700;
-
 }
 
 time {
@@ -114,14 +129,22 @@ time {
   font-size: 13px;
 }
 
-.article-icon{
-  width: 27px;
+.article-icon {
   height: 27px;
   margin-right: 16px;
-
 }
 
-.comment-number, .comment-number:hover{
+.article-icon.rounded {
+  width: 27px;
+  background: #eee;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-number,
+.comment-number:hover {
   background: #fff;
   border: black 1px solid;
   border-color: rgb(102, 102, 102);
@@ -133,25 +156,65 @@ time {
 .arro2-2 {
   border-color: rgb(255, 255, 255) transparent;
   border-style: solid;
-  border-width: 6px 0px 0px 6px;
+  border-width: 6px 0 0 6px;
   bottom: -6px;
   content: "";
   display: block;
   left: 16px;
   position: absolute;
-  width: 0px;
+  width: 0;
 }
 
 .arrow-1 {
   border-color: rgb(102, 102, 102) transparent;
   border-style: solid;
   bottom: -7px;
-  border-width: 6px 0px 0px 8px;
+  border-width: 6px 0 0 8px;
   content: "";
   display: block;
   left: 15px;
   position: absolute;
-  width: 0px;
+  width: 0;
+}
+
+article p {
+  font-size: 20px;
+}
+
+.not-an-ad-section {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.not-an-ad-section hr {
+  width: 72px;
+  border: none;
+  background: rgb(204, 204, 204);
+  height: 1px;
+}
+
+.not-an-ad-section > div {
+  margin: 22px 0;
+}
+
+article .weird-image img {
+  width: 100%;
+}
+
+article .weird-image {
+  max-width: 940px;
+}
+
+article .weird-image > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+article .weird-image p {
+  font-size: 13px;
+  font-weight: 300;
 }
 
 /* Helper Classes */
@@ -167,6 +230,6 @@ time {
 .flex.align-end { align-items: flex-end; }
 .h-100 { height: 100%; }
 .w-100 { width: 100%; }
-.text-align-center{text-align: center;}
-.font-cheltenham{font-family: nyt-cheltenham,georgia,'times new roman',times,serif;}
-.font-franklin {font-family: nyt-franklin,helvetica,arial,sans-serif;}
+.text-align-center { text-align: center; }
+.font-cheltenham { font-family: nyt-cheltenham, georgia, 'times new roman', times, serif; }
+.font-franklin { font-family: nyt-franklin, helvetica, arial, sans-serif; }
