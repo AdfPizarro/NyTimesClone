@@ -1,0 +1,24 @@
+{
+  "name": "ny-times-clone",
+  "version": "0.0.1",
+  "description": "A clone of a news article from the newyorktimes website",
+  "main": "stylelint.config.js",
+  "scripts": {
+    "lintcss": "stylelint assets/css",
+    "lintcss:fix": "stylelint --fix assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdfPizarro/NyTimesClone.git"
+  },
+  "author": "WinterCore & AdfPizarro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AdfPizarro/NyTimesClone/issues"
+  },
+  "homepage": "https://github.com/AdfPizarro/NyTimesClone#readme",
+  "devDependencies": {
+    "stylelint": "^13.3.3",
+    "stylelint-config-recommended": "^3.0.0"
+  }
+}
