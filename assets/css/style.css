@@ -128,10 +128,11 @@ iframe {
 /* nav */
 
 nav {
+  box-sizing: border-box;
   position: fixed;
   height: 43px;
   padding: 0 12px;
-  border: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
   font-family: 'Libre Franklin', sans-serif;
   width: 100%;
   background: white;
