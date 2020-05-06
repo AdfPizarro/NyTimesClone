@@ -9,3 +9,16 @@ footerSectionHeaders.forEach(function (item) {
             ul.classList.add("shown");
     });
 });
+
+const nav = document.querySelector(".nav-container");
+const navFix = document.querySelector(".nav-min-container");
+
+addEventListener("scroll", function(){
+  if (this.scrollY>1000){
+    navFix.classList.remove("hide")
+    nav.classList.add("hide");
+  }else{
+    nav.classList.remove("hide")
+    navFix.classList.add("hide");
+  }
+})

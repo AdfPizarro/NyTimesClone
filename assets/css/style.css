@@ -128,10 +128,24 @@ iframe {
 /* nav */
 
 nav {
+  box-sizing: border-box;
+  position: fixed;
   height: 43px;
   padding: 0 12px;
-  border: 1px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
   font-family: 'Libre Franklin', sans-serif;
+  width: 100%;
+  background: white;
+}
+
+nav .nav-container {
+  max-width: 1600px;
+  flex-grow: 1;
+}
+
+.nav-min-container {
+  max-width: 1600px;
+  flex-grow: 1;
 }
 
 nav .nav-section button {
@@ -154,9 +168,32 @@ nav .page-title {
   letter-spacing: 0.7px;
 }
 
-footer a:hover,
+footer a:hover {
+  text-decoration: underline;
+}
+
+.nav-middle a:link,
+.nav-middle a:visited,
+.nav-middle a:active {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+  color: #333;
+}
+
+.nav-middle a:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
 nav .page-title a:hover {
   text-decoration: underline;
+}
+
+.nav-middle {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333;
 }
 
 nav .logo {
@@ -284,6 +321,7 @@ article p {
 }
 
 .credits {
+  grid-column: 1/3;
   align-self: start;
   font-weight: 500;
   font-size: 12px;
@@ -508,6 +546,10 @@ footer .actual-footer {
   .only-small-media {
     display: block;
   }
+
+  .credits {
+    grid-column: 1/2;
+  }
 }
 
 /* Helper Classes */
@@ -530,3 +572,4 @@ footer .actual-footer {
 .font-cheltenham { font-family: nyt-cheltenham, georgia, 'times new roman', times, serif; }
 .font-franklin { font-family: nyt-franklin, helvetica, arial, sans-serif; }
 .small-text { font-size: 11px; }
+.hide { display: none; }
