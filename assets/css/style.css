@@ -530,6 +530,14 @@ footer .actual-footer {
   .credits {
     grid-column: 1/2;
   }
+
+  article {
+    margin-top: 30px;
+  }
+
+  .flex.md-column {
+    flex-direction: column;
+  }
 }
 
 /* Helper Classes */
