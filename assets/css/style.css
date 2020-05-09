@@ -68,10 +68,6 @@ img {
   display: block;
 }
 
-.article-icon img {
-  display: block;
-}
-
 footer a {
   text-decoration: none;
   color: black;
@@ -81,6 +77,7 @@ article a {
   color: #326891;
 }
 
+.article-source,
 .article-source > a {
   color: rgb(102, 102, 102);
   font-size: 10px;
@@ -89,11 +86,6 @@ article a {
 nav .page-title a {
   text-decoration: none;
   color: black;
-}
-
-.article-source {
-  color: rgb(102, 102, 102);
-  font-size: 10px;
 }
 
 footer .actual-footer a {
@@ -138,11 +130,7 @@ nav {
   background: white;
 }
 
-nav .nav-container {
-  max-width: 1600px;
-  flex-grow: 1;
-}
-
+.nav-container,
 .nav-min-container {
   max-width: 1600px;
   flex-grow: 1;
@@ -168,7 +156,8 @@ nav .page-title {
   letter-spacing: 0.7px;
 }
 
-footer a:hover {
+footer a:hover,
+nav a:hover {
   text-decoration: underline;
 }
 
@@ -184,10 +173,6 @@ footer a:hover {
 .nav-middle a:hover {
   text-decoration: underline;
   color: #333;
-}
-
-nav .page-title a:hover {
-  text-decoration: underline;
 }
 
 .nav-middle {
@@ -258,28 +243,26 @@ time {
   position: relative;
 }
 
+.arrow-1,
 .arrow-2 {
-  border-color: rgb(255, 255, 255) transparent;
   border-style: solid;
-  border-width: 6px 0 0 6px;
-  bottom: -6px;
   content: "";
-  display: block;
-  left: 16px;
   position: absolute;
   width: 0;
 }
 
+.arrow-2 {
+  border-color: rgb(255, 255, 255) transparent;
+  border-width: 6px 0 0 6px;
+  bottom: -6px;
+  left: 16px;
+}
+
 .arrow-1 {
   border-color: rgb(102, 102, 102) transparent;
-  border-style: solid;
   bottom: -7px;
   border-width: 6px 0 0 8px;
-  content: "";
-  display: block;
   left: 15px;
-  position: absolute;
-  width: 0;
 }
 
 article p {
@@ -483,10 +466,6 @@ footer .actual-footer {
     cursor: pointer;
   }
 
-  footer .other-links {
-    display: none;
-  }
-
   footer .footer-links-section ul.shown {
     display: grid;
   }
@@ -499,7 +478,7 @@ footer .actual-footer {
     margin: 4px 8px;
   }
 
-  footer .actual-footer .copyright {
+  .copyright {
     display: block;
     text-align: center;
     margin-bottom: 8px;
@@ -523,7 +502,8 @@ footer .actual-footer {
   .second-div,
   .action-buttons,
   .page-title,
-  .search-button {
+  .search-button,
+  .other-links {
     display: none;
   }
 
@@ -549,6 +529,14 @@ footer .actual-footer {
 
   .credits {
     grid-column: 1/2;
+  }
+
+  article {
+    margin-top: 30px;
+  }
+
+  .flex.md-column {
+    flex-direction: column;
   }
 }
 
